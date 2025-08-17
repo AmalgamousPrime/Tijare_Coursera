@@ -9,32 +9,40 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Declarations of functions to analyse statistics 
  *
- * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ *
+ * @author Hemang Tijare
+ * @date 17 Aug 2025
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/* Print statistics: min, max, mean, median */
+void print_statistics(unsigned char* array, unsigned int length);
 
-/**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
- */
+/* Print array elements */
+void print_array(unsigned char* array, unsigned int length);
+
+/* Return median of array */
+unsigned char find_median(unsigned char* array, unsigned int length);
+
+/* Return mean of array */
+unsigned char find_mean(unsigned char* array, unsigned int length);
+
+/* Return max of array */
+unsigned char find_maximum(unsigned char* array, unsigned int length);
+
+/* Return min of array */
+unsigned char find_minimum(unsigned char* array, unsigned int length);
+
+/* Sort array (largest to smallest) */
+void sort_array(unsigned char* array, unsigned int length);
+
+
 
 
 #endif /* __STATS_H__ */
